@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Package>
+  <name>Tritium TestMod</name>
+  <author>zCubed</author>
+  <description>
+    Test mod for Tritium, for cross references, overloading, patching, etc...
+  </description>
+  <version>0.0.0</version>
+  <id>tritium.core.testmod</id>
+</Package>

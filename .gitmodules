@@ -1,0 +1,9 @@
+[submodule "MG-MSDF"]
+	path = MG-MSDF
+	url = https://github.com/zCubed3/MG-MSDF.git
+[submodule "External/MG-MSDF"]
+	path = External/MG-MSDF
+	url = https://github.com/zCubed3/MG-MSDF.git
+[submodule "ThirdParty/VelcroPhysics"]
+	path = ThirdParty/VelcroPhysics
+	url = https://github.com/Genbox/VelcroPhysics.git

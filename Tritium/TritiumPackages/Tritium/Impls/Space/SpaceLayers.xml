@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <SpaceVisualLayerImpl Name="NebulaLayer1">
+    <texture>/Space/Nebula1.png</texture>
+    <textureRect>0, 0, 1024, 1024</textureRect>
+    <repetition>20</repetition>
+    <brightness>0.2</brightness>
+
+    <SpaceVisualLayerImpl Name="NebulaLayer2">
+      <texture>/Space/Nebula2.png</texture>
+    </SpaceVisualLayerImpl>
+  
+    <SpaceVisualLayerImpl Name="NebulaLayer3">
+      <texture>/Space/Nebula3.png</texture>
+    </SpaceVisualLayerImpl>
+  </SpaceVisualLayerImpl>
+
+  <SpaceVisualLayerImpl Name="DistantStarLayer1">
+    <texture>/Space/DistantStars.png</texture>
+    <textureRect>0, 0, 1024, 1024</textureRect>
+    <repetition>100</repetition>
+    <brightness>0.5</brightness>
+    <minDepth>0.475</minDepth>
+    <maxDepth>0.525</maxDepth>
+  </SpaceVisualLayerImpl>
+</Impls>

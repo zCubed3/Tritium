@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <BaseOutputPath>$(SolutionDir)Bin\</BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Code\Chester\**" />
+    <EmbeddedResource Remove="Code\Chester\**" />
+    <None Remove="Code\Chester\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Packages\Tritium\Impls\Pawns\Human.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Packages\Tritium\Impls\Pawns\Limbs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Packages\Tritium\Impls\Pawns\Organs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\Concepts\Items\" />
+    <Folder Include="TritiumPackages\Harmony\Assemblies\" />
+    <Folder Include="TritiumPackages\Tritium\Content\Chem" />
+    <Folder Include="TritiumPackages\Tritium\Content\Space\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\MSDF.MonoGame\MSDF.MonoGame.csproj" />
+    <ProjectReference Include="..\ThirdParty\VelcroPhysics\src\VelcroPhysics.MonoGame.DebugView\VelcroPhysics.MonoGame.DebugView.csproj" />
+    <ProjectReference Include="..\ThirdParty\VelcroPhysics\src\VelcroPhysics\VelcroPhysics.MonoGame.csproj" />
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="XCOPY &quot;$(ProjectDir)TritiumPackages&quot; &quot;$(TargetDir)Packages&quot; /s /i /y&#xD;&#xA;XCOPY &quot;$(ProjectDir)Fonts&quot; &quot;$(TargetDir)Fonts&quot; /s /i /y&#xD;&#xA;&#xD;&#xA;" />
+  </Target>
+</Project>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <TileImpl Name="MetalWallTile">
+    <allowedMaterialTypes>
+      <li>/MaterialTypeMetal</li>
+    </allowedMaterialTypes>
+
+    <layer>Wall</layer>
+    <tileSections>
+      <li>
+        <shape>Single</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>0, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>Vertical</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>16, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>Horizontal</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>32, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>Corner</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>48, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>HorizontalT</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>64, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>VerticalT</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>80, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>HorizontalCap</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>96, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>VerticalCap</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>112, 0, 16, 16</rectangle>
+      </li>
+      <li>
+        <shape>All</shape>
+        <texture>/OrientationWall.png</texture>
+        <rectangle>128, 0, 16, 16</rectangle>
+      </li>
+    </tileSections>
+  </TileImpl>
+</Impls>

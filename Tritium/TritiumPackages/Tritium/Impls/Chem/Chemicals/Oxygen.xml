@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <ChemicalImpl Name="ChemOxygen">
+    <chemName>Oxygen</chemName>
+  </ChemicalImpl>
+</Impls>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+    <ChemicalContainerImpl Name="Large Beaker">
+        <unitCapacity>50</unitCapacity>
+        <sprite>
+            <texture>/Chem/Beaker.png</texture>
+            <rect>0, 0, 8, 8</rect>
+        </sprite>
+    </ChemicalContainerImpl>
+</Impls>

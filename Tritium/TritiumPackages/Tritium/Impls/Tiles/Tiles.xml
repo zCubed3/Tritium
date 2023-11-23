@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <TileImpl Name="TiledFloorTile">
+    <allowedMaterialTypes>
+      <li>/MaterialTypeCeramic</li>
+    </allowedMaterialTypes>
+
+    <tileSections>
+      <li>
+        <shape>Single</shape>
+        <texture>/DevFloor.png</texture>
+        <rectangle>0, 32, 32, 32</rectangle>
+      </li>
+    </tileSections>
+  </TileImpl>
+</Impls>

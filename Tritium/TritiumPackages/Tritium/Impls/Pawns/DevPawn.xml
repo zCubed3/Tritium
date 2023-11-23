@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <PawnFeatureImpl Name="DevPawnFeature">
+    <featureName>DevFeature</featureName>
+    <removable>False</removable>
+
+    <!-- The feature position relative to the containing entity -->
+    <!-- When mirroring is needed in the anatomy, this is automatically flipped -->
+    <position>0, 0</position>
+
+    <!-- The feature scale relative to the containing entity -->
+    <scale>0.5, 0.5</scale>
+
+    <sprite>
+      <texture>/DevPawn.png</texture>
+      <rect>0, 0, 32, 32</rect>
+    </sprite>
+
+    <statMods>
+      <li>
+        <stat>Movement</stat>
+        <statOffset>10</statOffset>
+      </li>
+    </statMods>
+
+    <PawnFeatureImpl Name="DevPawnExtraFeature">
+      <position>0.5, 0</position>
+      <scale>0.25, 0.25</scale>
+      <statMods></statMods>
+    </PawnFeatureImpl>
+  </PawnFeatureImpl>
+  
+  <PawnImpl Name="DevPawn">
+    <anatomy>
+      <featureLocation>Torso</featureLocation>
+      <feature>/DevPawnFeature</feature>
+
+      <childFeatures>
+        <li>
+          <featureLocation>LeftArm</featureLocation>
+          <feature>/DevPawnExtraFeature</feature>
+          <mirrorX>True</mirrorX>
+        </li>
+        <li>
+          <featureLocation>RightArm</featureLocation>
+          <feature>/DevPawnExtraFeature</feature>
+        </li>
+      </childFeatures>
+    </anatomy>
+  </PawnImpl>
+</Impls>

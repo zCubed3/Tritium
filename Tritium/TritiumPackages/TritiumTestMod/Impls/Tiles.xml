@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <!-- Asset crossref test -->
+  <TileImpl Parent="tritium.core.content/TiledFloorTile" Name="/ModTileFloorTile">
+    <tileSections>
+      <li>
+        <shape>Single</shape>
+        <texture>tritium.core.content/DevFloor.png</texture>
+        <rectangle>0, 0, 64, 64</rectangle>
+      </li>
+    </tileSections>
+  </TileImpl>
+</Impls>

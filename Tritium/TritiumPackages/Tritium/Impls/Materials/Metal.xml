@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+  <MaterialTypeImpl Name="MaterialTypeMetal"/>
+
+  <MaterialImpl Name="BaseMetalMaterial">
+    <materialType>/MaterialTypeMetal</materialType>
+    <color>#AAAAAA</color>
+  </MaterialImpl>
+</Impls>

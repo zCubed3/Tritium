@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Impls>
+    <ChemicalRecipeImpl Name="ChemRecipeWater">
+        <reactionInputs>
+            <li>
+                <name>ChemHydrogen</name>
+                <amount>2</amount>
+            </li>
+            <li>
+                <name>ChemOxygen</name>
+                <amount>1</amount>
+            </li>
+        </reactionInputs>
+        <reactionOutputs>
+            <li>
+                <name>ChemWater</name>
+                <amount>3</amount>
+            </li>
+        </reactionOutputs>
+    </ChemicalRecipeImpl>
+</Impls>

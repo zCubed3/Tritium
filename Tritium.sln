@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tritium", "Tritium\Tritium.csproj", "{ADC40908-EA68-4A4D-9B84-54971904639A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{AD80B3A4-5897-4B25-A21A-52117079A41E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelcroPhysics.MonoGame", "ThirdParty\VelcroPhysics\src\VelcroPhysics\VelcroPhysics.MonoGame.csproj", "{C93AC7E0-A2A6-4120-9005-3F7C94141534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelcroPhysics.MonoGame.DebugView", "ThirdParty\VelcroPhysics\src\VelcroPhysics.MonoGame.DebugView\VelcroPhysics.MonoGame.DebugView.csproj", "{79CAD832-1605-4213-B3AE-6723E10F391E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSDF.MonoGame", "Libraries\MSDF.MonoGame\MSDF.MonoGame.csproj", "{88A4B770-ED23-4099-AFC8-FB3ECB52F0AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADC40908-EA68-4A4D-9B84-54971904639A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC40908-EA68-4A4D-9B84-54971904639A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC40908-EA68-4A4D-9B84-54971904639A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC40908-EA68-4A4D-9B84-54971904639A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93AC7E0-A2A6-4120-9005-3F7C94141534}.Debug|Any CPU.ActiveCfg = WindowsDebug|Any CPU
+		{C93AC7E0-A2A6-4120-9005-3F7C94141534}.Debug|Any CPU.Build.0 = WindowsDebug|Any CPU
+		{C93AC7E0-A2A6-4120-9005-3F7C94141534}.Release|Any CPU.ActiveCfg = WindowsDebug|Any CPU
+		{C93AC7E0-A2A6-4120-9005-3F7C94141534}.Release|Any CPU.Build.0 = WindowsDebug|Any CPU
+		{79CAD832-1605-4213-B3AE-6723E10F391E}.Debug|Any CPU.ActiveCfg = WindowsDebug|Any CPU
+		{79CAD832-1605-4213-B3AE-6723E10F391E}.Debug|Any CPU.Build.0 = WindowsDebug|Any CPU
+		{79CAD832-1605-4213-B3AE-6723E10F391E}.Release|Any CPU.ActiveCfg = WindowsDebug|Any CPU
+		{79CAD832-1605-4213-B3AE-6723E10F391E}.Release|Any CPU.Build.0 = WindowsDebug|Any CPU
+		{88A4B770-ED23-4099-AFC8-FB3ECB52F0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A4B770-ED23-4099-AFC8-FB3ECB52F0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A4B770-ED23-4099-AFC8-FB3ECB52F0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A4B770-ED23-4099-AFC8-FB3ECB52F0AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C93AC7E0-A2A6-4120-9005-3F7C94141534} = {AD80B3A4-5897-4B25-A21A-52117079A41E}
+		{79CAD832-1605-4213-B3AE-6723E10F391E} = {AD80B3A4-5897-4B25-A21A-52117079A41E}
+		{88A4B770-ED23-4099-AFC8-FB3ECB52F0AB} = {AD80B3A4-5897-4B25-A21A-52117079A41E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63BFB238-0054-4BA4-89C8-DC0F9F3BC502}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Package>
+  <name>Tritium</name>
+  <author>zCubed</author>
+  <description>
+    Base Tritium content, load before mods so they can override and patch it!
+  </description>
+  <version>0.0.0</version>
+  <id>tritium.core.content</id>
+</Package>
